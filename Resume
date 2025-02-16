@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{5.0pt} % Adjusted for better spacing
+\setlength{\columnsep}{10pt} % Adjusted for better spacing
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.3in} % Reduced adjustment for larger margins
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{0.8in} % Decreased width to increase side margins
+\addtolength{\topmargin}{-0.8in} % Reduced adjustment for larger top margin
+\addtolength{\textheight}{1.0in} % Decreased height to increase bottom margin
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Devon Boldt} \\ \vspace{1pt}
+    Arlington, VA\\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 571-249-0392 ~ \href{mailto:devonsboldt@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{devonsboldt@gmail.com}} ~ 
+    \href{https://linkedin.com/in/devon-boldt}{\raisebox{-0.2\height}\faLinkedin\ \underline{http://www.linkedin.com/in/devon-boldt}}  ~
+    \href{https://DevonSBoldt.github.io}{\raisebox{-0.2\height}\faGlobe\ \underline{DevonSBoldt.github.io}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {James Madison University}{Aug 2019 -- May 2023}
+      {B.S. Computer Science}{Harrisonburg, Virginia}
+    \resumeSubheading
+      {Virginia Polytechnic Institute and State University}{Aug 2024 -- Aug 2025}
+      {M.E. Computer Science Applications (4.0 GPA)}{Alexandria, Virginia}
+  \resumeSubHeadingListEnd
+
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+     \textbf{Languages}{: Java, Python, Kotlin, XML, PHP, C, C++, JavaScript, SQL, MySQL, VBA, Lua, R, Ruby, Haskell, Perl} 
+     \\\textbf{Technologies/Frameworks}{: Linux, GitHub, JUnit, Pandas, React, Git, Node.js} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Engineer II}{May 2022 -- Sept 2023}
+      {Merck}{Elkton, VA}
+      \resumeItemListStart
+        \resumeItem{Developed Excel scripts using Visual Basic to divide tasks to team members}
+        \resumeItem{Employed Power BI to script Excel sheets to automate identification and extraction of variable identifiers}
+        \resumeItem{Member on data visualization team using R to develop graphs to easily reflect proprietary data}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Front End Web Development Intern}{Jan 2022 -- Sept 2022}
+      {Game Gym}{Bethesda, MD}
+      \resumeItemListStart
+        \resumeItem{Developed the front end of over 30 web pages utilizing WordPress and Divi in conjunction with HTML and CSS}
+        \resumeItem{Engineered and continually refined merchandise page which yielded over 10k in total revenue}
+        \resumeItem{Directed individual weekly presentations on progress reports to administration}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{devonsboldt.github.io} $|$ \emph{HTML, CSS, Javascript}}{}
+          \resumeItemListStart
+            \resumeItem{Built a professional personal website using HTML, CSS, and JavaScript to showcase projects, skills, and accomplishments effectively.}
+            \resumeItem{Implemented version control and continuous updates by hosting the website on GitHub Pages, ensuring seamless accessibility and performance.}
+            \resumeItem{Prioritized responsive design and performance optimization, delivering a fast, intuitive, and mobile-friendly interface for visitors.}
+            \resumeItemListEnd
+          \vspace{-15pt}
+        \resumeProjectHeading
+          {\textbf{FancyGallery} $|$ \emph{XML, Kotlin, SQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed and implemented an Android application showcasing curated Flickr images in a RecyclerView photo grid and an interactive MapView, using REST APIs and Kotlin..}
+            \resumeItem{Improved user experience with dynamic map markers, seamless WebView navigation to detailed photo pages, and real-time data sharing via ViewModel and StateFlow.}
+            \resumeItem{Enhanced app responsiveness and usability by integrating Coil for fast image loading, reducing memory usage through optimized caching, and streamlining navigation with a BottomNavigationView.}
+            \resumeItemListEnd
+          \vspace{-15pt}
+      \resumeProjectHeading
+          {\textbf{ScaleCreator} $|$ \emph{Java, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a robust application in Java and Python to accurately identify all 168 notes across 24 major and minor scales, showcasing expertise in algorithm design and music theory integration.}
+            \resumeItem{Delivered an intuitive and effective tool actively used by over 50 students, streamlining music education and practice through a seamless user experience.}
+            \resumeItem{Earned endorsement from a music professor for the application’s effectiveness and practical utility in aiding music theory instruction.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Academic Achievements}}{}
+            \resumeItemListStart
+            \resumeItem{James Madison University Dean's List (4x): Attained a 3.5 GPA in all courses in the semester}
+            \resumeItem{Achieved a 4.0 GPA while pursuing M.Eng. in Computer Science Applications}
+            \resumeItem{Active member of Upsilon Pi Epsilon CS honor fraternity (Attained top 10\% GPA of all CS majors)}
+            \resumeItem{Certified Professional Scrum Master from Scrum.org}
+            \resumeItemListEnd
+            \resumeItemListEnd
+    %\vspace{-15pt}
+    \vspace{-30pt}
+\end{document}
